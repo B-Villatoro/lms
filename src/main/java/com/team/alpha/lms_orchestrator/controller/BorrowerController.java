@@ -17,7 +17,7 @@ import com.team.alpha.lms_orchestrator.entity.BookLoan;
 import com.team.alpha.lms_orchestrator.rest_client.BorrowerRestClient;
 
 @RestController
-@RequestMapping("/api/borrower")
+@RequestMapping(value ="/api/borrower",produces= {"application/json","application/xml"},consumes = {"application/json","application/xml"})
 public class BorrowerController {
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(BorrowerController.class);
