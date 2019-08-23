@@ -9,8 +9,8 @@ public interface ObjectRestClient<T> {
 
 	ResponseEntity<T> createObject(T typeObject);
 
-	ResponseEntity<T> deleteObject(T typeObject);
-
 	ResponseEntity<T> updateObject(T typeObject);
+
+	void deleteObject(int bookId, int branchId, int cardNumber);
 
 }
